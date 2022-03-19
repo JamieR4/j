@@ -1,0 +1,13 @@
+module Alu(A,RD2,Imm32,ALUSrc,AluOp,shampt, C,EqlMk)
+
+module Ctrl(opCode,funct,EqlMk, Jump,MemtoReg,MemWr,Branch,AluOp,ALUSrc,RegWr,ExtnTp,RegDst,jalDt,jalWr)
+
+module DtMem(DtAddr,WrDt,MemWr,clk,C,MemtoReg, WrBckDt)
+
+module SignExtend(Imm16,ExtnTp,Imm32)
+
+module InstMem(InstAddr,Inst)
+
+module PC (clk,rst,Branch,EqlMk,Jump,Imm32,JAddr,Rd, PC,NPC)
+
+module RegFile(rs,rt,rd,RegDst,NPC,WrBckDt,jalDt,clk,jalWr,RegWr, RD1,RD2)
